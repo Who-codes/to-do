@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  padding: 2em;
+}
+
+.container {
+  padding: 1.5em;
+  width: 700px;
+  text-align: center;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+ul {
+  list-style: none;
+  margin: 1em 0;
+  font-size: 20px;
+  margin-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+li {
+  padding: 0.5em 0.75em;
+  text-align: left;
+  border: black 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  font-size: inherit;
+  padding: 0.25em 0.75em;
+}
+
+input[type="text"] {
+  width: 80%;
+}
+
+.add-btn {
+  font-weight: bold;
+}
+
+.list-btn {
+  font-size: 16px;
+  display: flex;
+  gap: 1em;
+}
+
+.complete {
+  text-decoration: line-through;
+}
