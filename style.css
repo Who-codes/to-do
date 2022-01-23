@@ -8,6 +8,7 @@ body {
   display: grid;
   place-content: center;
   padding: 2em;
+  background-color: #F5B841;
 }
 
 .container {
@@ -33,7 +34,7 @@ ul {
 li {
   padding: 0.5em 0.75em;
   text-align: left;
-  border: black 2px solid;
+  border-bottom: black 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,21 +42,42 @@ li {
 
 input {
   font-size: inherit;
+  border-radius: 5px;
   padding: 0.25em 0.75em;
 }
 
 input[type="text"] {
   width: 80%;
+  border: none;
+}
+
+input[type = 'button']{
+  border: none;
+}
+
+input[type = 'button']:active, input[type = 'button']:hover{
+  opacity: 0.75;
 }
 
 .add-btn {
   font-weight: bold;
+  background-color: #F4FF52;
 }
 
 .list-btn {
   font-size: 16px;
   display: flex;
   gap: 1em;
+}
+
+.done-btn{
+  color: #fff;
+  background-color: #53FF45;
+}
+
+.del-btn{
+  background-color: #6A041D;
+  color: #fff;
 }
 
 .complete {
